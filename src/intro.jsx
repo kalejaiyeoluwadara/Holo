@@ -1,6 +1,6 @@
 import React from 'react'
 import robot from './assets/robot.png'
-import disc from "./assets/discount.svg";
+import disc from "./assets/Discount.svg";
 import arrow from "./assets/arrow-up.svg";
 function Intro() {
   return (
