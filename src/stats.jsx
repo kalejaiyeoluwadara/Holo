@@ -1,8 +1,8 @@
 import React from 'react'
 import Button from './button'
-import star from './assets/star.svg'
-import shield from './assets/shield.svg'
-import send from "./assets/send.svg";
+import star from './assets/Star.svg'
+import shield from './assets/Shield.svg'
+import send from "./assets/Send.svg";
 const stats = [
   {
     src:star,
