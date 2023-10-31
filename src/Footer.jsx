@@ -144,11 +144,11 @@ function Footer() {
           <h1>Copyright@</h1>
           <h1>2023 HooBank. All right reserved</h1>
         </div>
-        <div className="flex gap-12">
+        <div className="flex gap-5">
           {socialMedia.map((d) => {
             return (
               <a key={d.id} href={d.link}>
-                <img className="h-[25px]" src={d.icon} alt="" />
+                <img className="h-[22px]" src={d.icon} alt="" />
               </a>
             );
           })}

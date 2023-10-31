@@ -3,6 +3,7 @@ import Button from './button'
 import star from './assets/Star.svg'
 import shield from './assets/Shield.svg'
 import send from "./assets/Send.svg";
+import Reveal from './Reveal';
 const stats = [
   {
     src:star,
@@ -38,13 +39,15 @@ function Stats() {
         {stats.map((stat) => {
           const { src, title, info } = stat;
           return (
-            <div className="flex disc  w-[450px] gap-10 items-center  px-4 rounded-[9px] py-3">
+            <Reveal>
+              <div className="flex disc  w-[450px] gap-10 items-center  px-4 rounded-[9px] py-3">
                 <img className="h-[40px] w-[50px]" src={src} alt={title} />
-              <div>
-                <p className="font-[500] text-[20px] ">{title}</p>
-                <p className="opacity-80">{info}</p>
+                <div>
+                  <p className="font-[500] text-[20px] ">{title}</p>
+                  <p className="opacity-80">{info}</p>
+                </div>
               </div>
-            </div>
+            </Reveal>
           );
         })}
       </div>

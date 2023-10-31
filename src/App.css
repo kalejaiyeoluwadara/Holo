@@ -68,6 +68,18 @@ ul{
 .light{
     background-color: rgba(0, 255, 255, 0.189);
 }
+.grad{
+    background-color: #b1babb64;
+    height: 500px; 
+    z-index: 10;
+    width: 500px;
+    border-radius: 50%;
+    position: absolute;
+    left: -40px;
+    top: 200px;
+    transform: translateX(-200px);
+    filter: blur(150px);
+}
 .br{
     border: 3px solid aqua;
     color: aqua;

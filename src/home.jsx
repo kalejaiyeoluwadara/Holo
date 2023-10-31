@@ -10,22 +10,43 @@ import People from './testimonials'
 import Brands from './brands'
 import Try from './tryout'
 import Footer from './Footer'
+import Grad from './grad'
+import Reveal from './Reveal'
 function Home() {
   
   return (
-    <div className=" w-[100%] bg-gray-900 ">
-      <div className="cont h-[100%]  md:px-20 sm:px-12 px-10 w-[100%] bg-gray-900 ">
+    <div className=" w-[100%] relative bg-gray-900 ">
+      <div className="cont h-[100%]   sm:px-20 px-10 w-[100%] bg-gray-900 ">
         <Nav />
-        <Intro />
-        <Count />
-        <Stats />
-        <Info />
-        <Deal />
-        <People />
-        <Brands />
-        <Try />
+        <Grad />
+        <Reveal>
+          <Intro />
+        </Reveal>
+        <Reveal>
+          <Count />
+        </Reveal>
+        <Reveal>
+          <Stats />
+        </Reveal>
+        <Reveal>
+          <Info />
+        </Reveal>
+        <Reveal>
+          <Deal />
+        </Reveal>
+        <Reveal>
+          <People />
+        </Reveal>
+        <Reveal>
+          <Brands />
+        </Reveal>
+        <Reveal>
+          <Try />
+        </Reveal>
       </div>
+      <Reveal>
         <Footer />
+      </Reveal>
     </div>
   );
 }
